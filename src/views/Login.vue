@@ -70,10 +70,10 @@
               <v-card flat>
                 <v-card-text>
                   <p class="text-2xl font-weight-semibold text--primary mb-2">
-                    Welcome to Materio! 👋🏻
+                    Bem vindo! 👋🏻
                   </p>
                   <p class="mb-2">
-                    Please sign-in to your account and start the adventure
+                    Digite seus dados para login no sistema
                   </p>
                 </v-card-text>
 
@@ -191,12 +191,12 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiFacebook, mdiTwitter, mdiGithub, mdiGoogle, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js'
-import { ref, getCurrentInstance } from '@vue/composition-api'
-import { required, emailValidator } from '@core/utils/validation'
 import axios from '@axios'
 import { useRouter } from '@core/utils'
+import { emailValidator, required } from '@core/utils/validation'
+import { mdiEyeOffOutline, mdiEyeOutline, mdiFacebook, mdiGithub, mdiGoogle, mdiTwitter } from '@mdi/js'
 import themeConfig from '@themeConfig'
+import { getCurrentInstance, ref } from '@vue/composition-api'
 
 export default {
   setup() {
